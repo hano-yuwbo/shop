@@ -10,9 +10,7 @@ angular.module('app', [
     'ngStorage',
     //业务模块
     'home',
-    'student',
-    'teacher',
-    'admin',
+    'goods'
 ])
     .run(
         ['$rootScope', '$state', '$stateParams',
@@ -80,9 +78,7 @@ angular.module('app', [
 angular.module('app.lazyload', []);
 angular.module('app.routes', []);
 angular.module('home', []);
-angular.module('student', []);
-angular.module('teacher', []);
-angular.module('admin', []);
+angular.module('goods', []);
 
 // String.prototype.replaceAll = function (s1, s2) {
 //     var temp = this;

@@ -7,6 +7,7 @@ angular
     .constant('APP_REQUIRES', {
         scripts: {
             'toast': ['resources/toastr/toastr.min.css', 'resources/toastr/toastr.min.js', 'app/common/services/toast.service.js'],
+            'photo-big': ['resources/photo-big/photo-big.css', 'resources/photo-big/photo-big.js'],
             // 'sortable': ['vendor/jquery/sortable/jquery.sortable.js'],
             // 'echarts':['vendor/jquery/echarts/dist/echarts.js'],
             // 'viewer':['vendor/jquery/imagesViewer/viewer.min.css','vendor/jquery/imagesViewer/viewer.min.js'],
@@ -19,20 +20,8 @@ angular
                 files: ['app/common/home.ctrl.js']
             },
             {
-                name: 'userList',
-                files: ['app/modules/admin/js/user.list.js']
-            },
-            {
-                name: 'userEdit',
-                files: ['app/modules/admin/js/user.edit.js']
-            },
-            {
-                name: 'courseList',
-                files: ['app/modules/student/js/course.list.js']
-            },
-            {
-                name: 'myCourseList',
-                files: ['app/modules/teacher/js/my.course.list.js']
+                name: 'goodsList',
+                files: ['app/modules/goods/js/goods.list.js']
             },
         ]
     });

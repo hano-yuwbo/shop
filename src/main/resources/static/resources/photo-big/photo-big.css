@@ -1,0 +1,155 @@
+.big-photo-div img {
+    margin: 15px 0;
+}
+
+.big-photo-div img:hover {
+    border: 1px solid red;
+}
+
+.inss {
+    padding-top: 60%;
+    z-index: 999;
+    color: #ffffff;
+    font-size: 2em;
+    background: red;
+    width: 91%;
+    height: 100%;
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+    position: absolute;
+    display: block !important;
+}
+
+.big-photo-div .row {
+    margin-left: 15px;
+}
+
+.big-photo-div .money {
+    color: #f40;
+}
+
+.big-photo-div .postfree {
+    background-position: -26px 0;
+}
+
+.big-photo-div .amount {
+    color: #9c9c9c;
+}
+
+.big-photo-div .desc {
+    color: #6c6c6c;
+}
+
+.big-photo-div .comment {
+    color: #9c9c9c;
+}
+
+.big-photo-div .postfree, .new {
+    background-image: url(../../resources/biz/images/postfree-new.png);
+    float: left;
+    width: 26px;
+    height: 14px;
+    margin: 2px 5px 0 0;
+    position: relative;
+}
+
+.big-photo-div a:hover {
+    text-decoration: none;
+}
+
+/** {*/
+/*margin: 0;*/
+/*padding: 0;*/
+/*list-style-type: none;*/
+/*}*/
+
+/*a, img {*/
+/*border: 0;*/
+/*}*/
+
+/*a {*/
+/*color: #333;*/
+/*text-decoration: none;*/
+/*}*/
+
+/*a:hover {*/
+/*text-decoration: none;*/
+/*}*/
+
+/*body {*/
+/*font: 12px/180% Arial, Helvetica, sans-serif, "新宋体";*/
+/*}*/
+
+/* box01 */
+
+.box01 {
+    width: 1000px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.box01 li {
+    float: left;
+    width: 180px;
+    text-align: center;
+    padding-right: 10px;
+    margin-right: 10px;
+    height: 120px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    z-index: 0;
+    position: relative;
+}
+
+.box01 li img {
+    height: 120px;
+    margin: 0 auto;
+}
+
+.box01 li .in {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 180px;
+}
+
+.box01 li .in p {
+    display: none;
+    text-align: left;
+}
+
+.box01 li.on {
+    z-index: 99;
+}
+
+.box01 li.on .in {
+    padding: 5px;
+    border: 1px solid #ccc;
+    position: absolute;
+    z-index: 100;
+    width: auto;
+    text-align: center;
+    top: -40px;
+    background: #fff;
+}
+
+.box01 li.on .in p {
+    position: relative;
+    display: block;
+}
+
+.box01 li.on img {
+    height: auto;
+    margin-bottom: 8px;
+}
+
+.bsc {
+    background: url(../resources/photo-big/images/icon01.png) no-repeat;
+    position: absolute;
+    right: 10px;
+    width: 19px;
+    height: 15px;
+    font-size: 0;
+    float: right;
+}
