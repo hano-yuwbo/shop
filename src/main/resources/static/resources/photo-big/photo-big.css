@@ -14,9 +14,9 @@
     background: red;
     width: 91%;
     height: 100%;
-    filter: alpha(opacity=50);
-    -moz-opacity: 0.5;
-    opacity: 0.5;
+    filter: alpha(opacity=20);
+    -moz-opacity: 0.2;
+    opacity: 0.2;
     position: absolute;
     display: block !important;
 }

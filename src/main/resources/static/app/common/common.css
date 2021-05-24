@@ -1,0 +1,13 @@
+.text_overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.text_left {
+    text-align: left
+}
+
+.text_right {
+    text-align: right
+}
