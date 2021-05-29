@@ -1,21 +1,19 @@
-<div class="container">
-    <div class="col-xs-6 col-sm-4 col-lg-3 big-photo-div clearfix" ng-repeat="goods in goodsList"
-         ng-mouseenter="goods.hover=true" ng-mouseleave="goods.hover=false">
-        <a href="">
-            <div style="display: none" ng-class="{'inss':goods.hover}" class="text-center text_overflow">
-                <span>666666666666666666666666666666</span>
-            </div>
-            <img class="img-thumbnail" src="resources/photo-big/images/img01.jpg" alt="">
-            <div class="row money text_overflow">¥ 333333333368.00000000000000000000</div>
-            <div class="row">
-                <span class="postfree"></span>
-                <span class="new"></span>
-                <span class="amount">月销971笔</span>
-            </div>
-            <div class="row desc text_overflow">111111111111111111111111111111111非精品不达人,买就买最好,我懂你!</div>
-            <div class="row comment">
-                评论 0 收藏 1111{{goods.id}}
-            </div>
-        </a>
-    </div>
+<div class="col-xs-6 col-sm-4 col-lg-3 big-photo-div clearfix" ng-repeat="goods in goodsList"
+     ng-mouseenter="goods.hover=true" ng-mouseleave="goods.hover=false">
+    <a ui-sref="app.goodsDetail(goods.id)">
+        <div style="display: none" ng-class="{'inss':goods.hover}" class="text-center text_overflow">
+            <span>666666666666666666666666666666</span>
+        </div>
+        <img class="img-thumbnail" src="resources/photo-big/images/img01.jpg" alt="">
+        <div class="row money text_overflow">¥ 333333333368.00000000000000000000</div>
+        <div class="row">
+            <span class="postfree"></span>
+            <span class="new"></span>
+            <span class="amount">月销971笔</span>
+        </div>
+        <div class="row desc text_overflow">111111111111111111111111111111111非精品不达人,买就买最好,我懂你!</div>
+        <div class="row comment">
+            评论 0 收藏 1111{{goods.id}}
+        </div>
+    </a>
 </div>

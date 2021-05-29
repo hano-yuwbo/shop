@@ -1,0 +1,40 @@
+<div class="col-xs-4 goods-detail-left">
+    <div class="row">
+        <div>
+            <img class="img-thumbnail goods_pic" ng-src="{{ctx+currentUrl}}">
+        </div>
+    </div>
+    <div class="row" style="margin-top: 10px;">
+        <div class="col-xs-4" ng-repeat="image in goods.imageList track by $index" ng-mouseenter="overImage($index)">
+            <img class="img-rounded goods_pic_thumbnail" ng-src="{{ctx+image.src}}">
+        </div>
+    </div>
+</div>
+<div class="col-xs-8 goods-detail-right">
+    <div class="row goods-detail-title">
+        <span>圆形鱼缸造景</span>
+    </div>
+    <div class="row goods-detail-money">
+        <span>价格:¥</span>
+        <span>19.90</span>
+    </div>
+    <div class="row goods-detail-amount">
+        <div class="col-xs-2">数量:</div>
+        <div class="col-xs-4">
+            <div class="input-group">
+            <span class="input-group-btn">
+                <button class="btn btn-default" type="button" ng-click="reduceAmount()">-</button>
+            </span>
+                <input type="text" class="form-control" ng-model="param.buyAmount">
+                <span class="input-group-btn">
+                <button class="btn btn-default" type="button" ng-click="plusAmount()">+</button>
+            </span>
+            </div>
+        </div>
+        <div class="col-xs-3" ng-bind="'件 (库存'+goods.stock+'件)'"></div>
+    </div>
+    <div class="goods-detail-buy">
+        <button class="btn btn-lg btn_buy">立即购买</button>
+        <button class="btn btn-lg btn_add">加入购物车</button>
+    </div>
+</div>

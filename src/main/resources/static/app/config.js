@@ -23,6 +23,10 @@ angular
                 name: 'goodsList',
                 files: ['app/modules/goods/js/goods.list.js']
             },
+            {
+                name: 'goodsDetail',
+                files: ['app/modules/goods/js/goods.detail.js']
+            },
         ]
     });
 
