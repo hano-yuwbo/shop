@@ -87,3 +87,10 @@
     background: #F22D00;
 }
 
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
