@@ -1,4 +1,4 @@
-angular.module('goods').controller('goodsDetailCtrl', function ($scope, $stateParams, $sessionStorage) {
+angular.module('goods').controller('goodsDetailCtrl', function ($scope, $timeout, $stateParams, $sessionStorage) {
     $scope.goods = {
         imageList: [
             {id: 1, src: 'resources/biz/images/yugang.jpg'},
@@ -17,8 +17,12 @@ angular.module('goods').controller('goodsDetailCtrl', function ($scope, $statePa
      * 初始化
      */
     $scope.onInit = function () {
+        $scope.param.loadingFlag = true;
         $scope.currentUrl = $scope.goods.imageList[0].src;
         $scope.param.buyAmount = 1;
+        $timeout(function () {
+            $scope.param.loadingFlag = false;
+        }, 500);
     }
     $scope.onInit();
     /**
@@ -46,10 +50,9 @@ angular.module('goods').controller('goodsDetailCtrl', function ($scope, $statePa
      * 加入购物车
      */
     $scope.addToCart = function () {
-        if ($("#toast").css('display') != 'none') return;
-        $("#toast").fadeIn(100);
-        setTimeout(function () {
-            $("#toast").fadeOut(100);
+        $scope.param.addSuccessFlag = true;
+        $timeout(function () {
+            $scope.param.addSuccessFlag = false;
         }, 2000);
     }
 });
